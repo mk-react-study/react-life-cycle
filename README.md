@@ -1,8 +1,9 @@
-# react-life-cycle
+# React Life Cycle
 
 - Component Create Life Cycle 
 ```
-constructor(props) -> getDerivedStateFromProps(props, state) -> componentWillMount() -> render() -> Render Child Components -> componentDidMount()
+constructor(props) -> getDerivedStateFromProps(props, state) -> 
+componentWillMount() -> render() -> Render Child Components -> componentDidMount()
 ```
 
 - Constructor 
