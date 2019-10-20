@@ -12,6 +12,14 @@ getDerivedStateFromProps(props, state) -> shouldComponentUpdate(nextProps,nextSt
 -> render() -> Update Child Component Props -> getSnapshotBeforeUpdate(prevProps, prevState)
 -> componentDidUpdate()
 ```
+
+### useEffect
+
+- This is hook so can be use with functional component.
+- This can be consider as combination of all hooks.
+```
+
+```
 - Constructor 
 ```
 constructor(props){
