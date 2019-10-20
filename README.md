@@ -18,6 +18,7 @@ getDerivedStateFromProps(props, state) -> shouldComponentUpdate(nextProps,nextSt
 - This is hook so can be use with functional component.
 - This can be consider as combination of componentDidMount and componentDidUpdate
 - This can be use multiple time, can put different conditions.
+- Use effect can retuen optional function that will execute after render cycle complete.
 - Version one this will execute only one time because of [] pass in condition.
   * 1st time when component attach and remove
 ```
