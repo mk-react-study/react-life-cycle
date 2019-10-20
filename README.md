@@ -18,8 +18,28 @@ getDerivedStateFromProps(props, state) -> shouldComponentUpdate(nextProps,nextSt
 - This is hook so can be use with functional component.
 - This can be consider as combination of componentDidMount and componentDidUpdate
 - This can be use multiple time, can put different conditions.
+- Version one this will execute only one time because of [] pass in condition.
+  * 1st time when component attach and remove
 ```
-
+useEffect(() => {
+    console.log('[Cockpit.js] useEffect');
+    // Http request...
+    setTimeout(() => {
+      alert('Saved data to cloud!');
+    }, 1000);
+    return () => {
+      console.log('[Cockpit.js] cleanup work in useEffect');
+    };
+  }, []);
+```
+- Version 2 
+```
+useEffect(() => {
+  console.log('[Cockpit.js] 2nd useEffect');
+  return () => {
+    console.log('[Cockpit.js] cleanup work in 2nd useEffect');
+  };
+});
 ```
 - Constructor 
 ```
