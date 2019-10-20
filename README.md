@@ -17,6 +17,7 @@ getDerivedStateFromProps(props, state) -> shouldComponentUpdate(nextProps,nextSt
 
 - This is hook so can be use with functional component.
 - This can be consider as combination of componentDidMount and componentDidUpdate
+- This can be use multiple time, can put different conditions.
 ```
 
 ```
